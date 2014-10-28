@@ -48,7 +48,11 @@ namespace Beca.Xamarin.Example.Core.ViewModels
 
 		public override void Start()
 		{
-			ToDoItems = _azureService.GetItems().ToList();
+			Task.Run(async () =>
+				{
+					ToDoItems = (await _azureService.GetItems()).ToList();
+				});
+			
 			base.Start();
 		}
 
@@ -56,10 +60,10 @@ namespace Beca.Xamarin.Example.Core.ViewModels
 		{
 			get
 			{
-				return new MvxCommand(() =>
+				return new MvxCommand(async () =>
 				{
-					_azureService.AddTodoItem(Text);
-					ToDoItems = _azureService.GetItems().ToList();
+					await _azureService.AddTodoItem(Text);
+					ToDoItems = (await _azureService.GetItems()).ToList();
 				});
 			}
 		}

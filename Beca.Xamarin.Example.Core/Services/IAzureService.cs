@@ -1,12 +1,13 @@
 ﻿using Beca.Xamarin.Example.Core.Models;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Beca.Xamarin.Example.Core.Services
 {
 	public interface IAzureService
 	{
-		void AddTodoItem(string text);
+		Task AddTodoItem(string text);
 
-		IEnumerable<ToDoItem> GetItems();
+		Task<IEnumerable<ToDoItem>> GetItems();
 	}
 }
