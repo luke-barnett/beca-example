@@ -7,11 +7,7 @@
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        local:MvxBind="Text Item" />
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        local:MvxBind="Text Details" />
+        local:MvxBind="Text Text" />
     <Button
         android:layout_height="wrap_content"
         android:layout_width="fill_parent"

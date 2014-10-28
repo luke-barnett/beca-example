@@ -10,15 +10,14 @@
 	Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
 	<StackPanel x:Name="LayoutRoot">
-		<TextBox Text="{Binding Item, Mode=TwoWay}" />
-		<TextBox Text="{Binding Details, Mode=TwoWay}" />
+		<TextBox Text="{Binding Text, Mode=TwoWay}" />
 		<Button Content="Add Item" Command="{Binding AddItem}" />
 		<ListView ItemsSource="{Binding ToDoItems}">
 			<ListView.ItemTemplate>
 				<DataTemplate>
 					<StackPanel>
-						<TextBlock Text="{Binding Item}" />
-						<TextBlock Text="{Binding Details}" />
+						<TextBlock Text="{Binding Text}" />
+						<TextBlock Text="{Binding Complete}" />
 					</StackPanel>
 				</DataTemplate>
 			</ListView.ItemTemplate>

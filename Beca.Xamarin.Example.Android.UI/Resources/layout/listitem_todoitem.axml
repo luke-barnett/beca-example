@@ -9,14 +9,14 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        local:MvxBind="Text Item"
-        android:text="item"
+        local:MvxBind="Text Text"
+        android:text="Item Text"
         android:textAppearance="?android:attr/textAppearanceLarge" />
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        local:MvxBind="Text Details"
-        android:text="details"
+        local:MvxBind="Text Complete"
+        android:text="True"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 </LinearLayout>

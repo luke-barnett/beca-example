@@ -13,7 +13,7 @@ namespace Beca.Xamarin.Example.Core.ViewModels
 	{
 		readonly IAzureService _azureService;
 		List<ToDoItem> _toDoItems;
-		string _item, _details;
+		string _text;
 
 
 		public TodoItemsViewModel(IAzureService azureService)
@@ -22,23 +22,13 @@ namespace Beca.Xamarin.Example.Core.ViewModels
 			_toDoItems = new List<ToDoItem>();
 		}
 
-		public string Item
+		public string Text
 		{
-			get { return _item; }
+			get { return _text; }
 			set
 			{
-				_item = value;
-				RaisePropertyChanged(() => Item);
-			}
-		}
-
-		public string Details
-		{
-			get { return _details; }
-			set
-			{
-				_details = value;
-				RaisePropertyChanged(() => Details);
+				_text = value;
+				RaisePropertyChanged(() => Text);
 			}
 		}
 
@@ -68,7 +58,7 @@ namespace Beca.Xamarin.Example.Core.ViewModels
 			{
 				return new MvxCommand(() =>
 				{
-					_azureService.AddTodoItem(Item, Details);
+					_azureService.AddTodoItem(Text);
 					ToDoItems = _azureService.GetItems().ToList();
 				});
 			}

@@ -6,11 +6,11 @@ namespace Beca.Xamarin.Example.Core.Services.Implementations
 {
 	public class AzureService : IAzureService
 	{
-		List<ToDoItem> _items = new List<ToDoItem>() { new ToDoItem { Item = "Xamarin", Details = "Develop" } };
+		List<ToDoItem> _items = new List<ToDoItem>() { new ToDoItem { Text = "Xamarin", Complete = true } };
 
-		public void AddTodoItem(string item, string details)
+		public void AddTodoItem(string text)
 		{
-			_items.Add(new ToDoItem { Item = item, Details = details });
+			_items.Add(new ToDoItem { Text = text, Complete = false });
 		}
 
 		public IEnumerable<ToDoItem> GetItems()
