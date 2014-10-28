@@ -1,5 +1,5 @@
 using Android.Content;
-using Beca.Xamarin.Example.Core;
+using Beca.Xamarin.Example.Android.Core;
 using Cirrious.MvvmCross.Droid.Platform;
 using Cirrious.MvvmCross.ViewModels;
 
@@ -15,7 +15,7 @@ namespace Beca.Xamarin.Example.Android.UI
 
 		protected override IMvxApplication CreateApp()
 		{
-			return new App();
+			return new AndroidApp();
 		}
 	}
 }

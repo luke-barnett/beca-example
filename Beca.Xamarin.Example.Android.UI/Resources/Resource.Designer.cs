@@ -26,6 +26,8 @@ namespace Beca.Xamarin.Example.Android.UI
 		
 		public static void UpdateIdValues()
 		{
+			global::Beca.Xamarin.Example.Android.Core.Resource.String.ApplicationName = global::Beca.Xamarin.Example.Android.UI.Resource.String.ApplicationName;
+			global::Beca.Xamarin.Example.Android.Core.Resource.String.Hello = global::Beca.Xamarin.Example.Android.UI.Resource.String.Hello;
 		}
 		
 		public partial class Attribute
@@ -81,8 +83,8 @@ namespace Beca.Xamarin.Example.Android.UI
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f040000
-			public const int MvxBindingTagUnique = 2130968576;
+			// aapt resource value: 0x7f050000
+			public const int MvxBindingTagUnique = 2131034112;
 			
 			static Id()
 			{
@@ -116,8 +118,14 @@ namespace Beca.Xamarin.Example.Android.UI
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int add = 2131034112;
+			// aapt resource value: 0x7f040001
+			public const int ApplicationName = 2130968577;
+			
+			// aapt resource value: 0x7f040000
+			public const int Hello = 2130968576;
+			
+			// aapt resource value: 0x7f040002
+			public const int add = 2130968578;
 			
 			static String()
 			{

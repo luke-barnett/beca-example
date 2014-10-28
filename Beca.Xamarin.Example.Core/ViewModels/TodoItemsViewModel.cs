@@ -50,6 +50,7 @@ namespace Beca.Xamarin.Example.Core.ViewModels
 		{
 			Task.Run(async () =>
 				{
+					await _azureService.Initialize();
 					ToDoItems = (await _azureService.GetItems()).ToList();
 				});
 			

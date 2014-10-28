@@ -6,6 +6,8 @@ namespace Beca.Xamarin.Example.Core.Services
 {
 	public interface IAzureService
 	{
+		Task Initialize();
+
 		Task AddTodoItem(string text);
 
 		Task<IEnumerable<ToDoItem>> GetItems();

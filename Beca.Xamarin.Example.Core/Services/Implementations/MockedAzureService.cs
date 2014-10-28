@@ -18,5 +18,10 @@ namespace Beca.Xamarin.Example.Core.Services.Implementations
 		{
 			return _items;
 		}
+
+		public async Task Initialize()
+		{
+			
+		}
 	}
 }

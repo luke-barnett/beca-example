@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Beca.Xamarin.Example.Core.Services
 {
-	public interface ICameraService
+	public interface IPathsService
 	{
+		string SQLitePathString { get; }
 	}
 }
