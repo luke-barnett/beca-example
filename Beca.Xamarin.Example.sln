@@ -1,0 +1,92 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beca.Xamarin.Example.Core", "Beca.Xamarin.Example.Core\Beca.Xamarin.Example.Core.csproj", "{DDD90CD7-7F6D-4E6F-AFB4-333D3FCF109A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beca.Xamarin.Example.Android.UI", "Beca.Xamarin.Example.Android.UI\Beca.Xamarin.Example.Android.UI.csproj", "{A54E2248-A48B-409F-BCA7-FF6AB7860CF1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{978A3B64-B54B-4A07-B735-DD6761AB7D79}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beca.Xamarin.Example.Android.Core", "Beca.Xamarin.Example.Android.Core\Beca.Xamarin.Example.Android.Core.csproj", "{419F7538-573C-40CB-991E-1856FA917D62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beca.Xamarin.Example.WP.UI", "Beca.Xamarin.Example.WP.UI\Beca.Xamarin.Example.WP.UI.csproj", "{67592688-8E4D-4913-9B9C-36BF2D239ED3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDD90CD7-7F6D-4E6F-AFB4-333D3FCF109A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDD90CD7-7F6D-4E6F-AFB4-333D3FCF109A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDD90CD7-7F6D-4E6F-AFB4-333D3FCF109A}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{DDD90CD7-7F6D-4E6F-AFB4-333D3FCF109A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DDD90CD7-7F6D-4E6F-AFB4-333D3FCF109A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DDD90CD7-7F6D-4E6F-AFB4-333D3FCF109A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDD90CD7-7F6D-4E6F-AFB4-333D3FCF109A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDD90CD7-7F6D-4E6F-AFB4-333D3FCF109A}.Release|ARM.ActiveCfg = Release|Any CPU
+		{DDD90CD7-7F6D-4E6F-AFB4-333D3FCF109A}.Release|x64.ActiveCfg = Release|Any CPU
+		{DDD90CD7-7F6D-4E6F-AFB4-333D3FCF109A}.Release|x86.ActiveCfg = Release|Any CPU
+		{A54E2248-A48B-409F-BCA7-FF6AB7860CF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A54E2248-A48B-409F-BCA7-FF6AB7860CF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A54E2248-A48B-409F-BCA7-FF6AB7860CF1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A54E2248-A48B-409F-BCA7-FF6AB7860CF1}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{A54E2248-A48B-409F-BCA7-FF6AB7860CF1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A54E2248-A48B-409F-BCA7-FF6AB7860CF1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A54E2248-A48B-409F-BCA7-FF6AB7860CF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A54E2248-A48B-409F-BCA7-FF6AB7860CF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A54E2248-A48B-409F-BCA7-FF6AB7860CF1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A54E2248-A48B-409F-BCA7-FF6AB7860CF1}.Release|ARM.ActiveCfg = Release|Any CPU
+		{A54E2248-A48B-409F-BCA7-FF6AB7860CF1}.Release|x64.ActiveCfg = Release|Any CPU
+		{A54E2248-A48B-409F-BCA7-FF6AB7860CF1}.Release|x86.ActiveCfg = Release|Any CPU
+		{419F7538-573C-40CB-991E-1856FA917D62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{419F7538-573C-40CB-991E-1856FA917D62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{419F7538-573C-40CB-991E-1856FA917D62}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{419F7538-573C-40CB-991E-1856FA917D62}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{419F7538-573C-40CB-991E-1856FA917D62}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{419F7538-573C-40CB-991E-1856FA917D62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{419F7538-573C-40CB-991E-1856FA917D62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{419F7538-573C-40CB-991E-1856FA917D62}.Release|ARM.ActiveCfg = Release|Any CPU
+		{419F7538-573C-40CB-991E-1856FA917D62}.Release|x64.ActiveCfg = Release|Any CPU
+		{419F7538-573C-40CB-991E-1856FA917D62}.Release|x86.ActiveCfg = Release|Any CPU
+		{67592688-8E4D-4913-9B9C-36BF2D239ED3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67592688-8E4D-4913-9B9C-36BF2D239ED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67592688-8E4D-4913-9B9C-36BF2D239ED3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{67592688-8E4D-4913-9B9C-36BF2D239ED3}.Debug|ARM.ActiveCfg = Debug|ARM
+		{67592688-8E4D-4913-9B9C-36BF2D239ED3}.Debug|ARM.Build.0 = Debug|ARM
+		{67592688-8E4D-4913-9B9C-36BF2D239ED3}.Debug|ARM.Deploy.0 = Debug|ARM
+		{67592688-8E4D-4913-9B9C-36BF2D239ED3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{67592688-8E4D-4913-9B9C-36BF2D239ED3}.Debug|x86.ActiveCfg = Debug|x86
+		{67592688-8E4D-4913-9B9C-36BF2D239ED3}.Debug|x86.Build.0 = Debug|x86
+		{67592688-8E4D-4913-9B9C-36BF2D239ED3}.Debug|x86.Deploy.0 = Debug|x86
+		{67592688-8E4D-4913-9B9C-36BF2D239ED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67592688-8E4D-4913-9B9C-36BF2D239ED3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67592688-8E4D-4913-9B9C-36BF2D239ED3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{67592688-8E4D-4913-9B9C-36BF2D239ED3}.Release|ARM.ActiveCfg = Release|ARM
+		{67592688-8E4D-4913-9B9C-36BF2D239ED3}.Release|ARM.Build.0 = Release|ARM
+		{67592688-8E4D-4913-9B9C-36BF2D239ED3}.Release|ARM.Deploy.0 = Release|ARM
+		{67592688-8E4D-4913-9B9C-36BF2D239ED3}.Release|x64.ActiveCfg = Release|Any CPU
+		{67592688-8E4D-4913-9B9C-36BF2D239ED3}.Release|x86.ActiveCfg = Release|x86
+		{67592688-8E4D-4913-9B9C-36BF2D239ED3}.Release|x86.Build.0 = Release|x86
+		{67592688-8E4D-4913-9B9C-36BF2D239ED3}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Beca.Xamarin.Example.Android.UI\Beca.Xamarin.Example.Android.UI.csproj
+	EndGlobalSection
+EndGlobal
