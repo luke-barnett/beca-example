@@ -4,6 +4,19 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        local:MvxBind="Text Location" />
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="@string/takepicture"
+        local:MvxBind="Click TakePicture" />
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="Bitmap Image,Converter=InMemoryImage" />
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
