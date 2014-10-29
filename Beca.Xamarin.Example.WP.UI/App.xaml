@@ -2,6 +2,11 @@
     x:Class="Beca.Xamarin.Example.WP.UI.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Beca.Xamarin.Example.WP.UI">
+    xmlns:local="using:Beca.Xamarin.Example.WP.UI"
+	xmlns:valueConverters="using:Beca.Xamarin.Example.WP.UI.ValueConverters">
+
+	<Application.Resources>
+		<valueConverters:NativeInMemoryImageValueConverter x:Key="BytesToImage" />
+	</Application.Resources>
 
 </Application>

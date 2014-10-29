@@ -1,6 +1,7 @@
 ﻿using Beca.Xamarin.Example.Core.Services;
 using Beca.Xamarin.Example.WP.Core.Services;
 using Cirrious.CrossCore;
+using Cirrious.MvvmCross.Plugins.PictureChooser;
 
 namespace Beca.Xamarin.Example.WP.Core
 {
@@ -10,6 +11,7 @@ namespace Beca.Xamarin.Example.WP.Core
 			: base()
 		{
 			Mvx.RegisterType<IPathsService, WindowsPhonePathsServices>();
+			Mvx.RegisterType<IMvxPictureChooserTask, MvxPictureChooserTask>();
 		}
 	}
 }

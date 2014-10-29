@@ -1,5 +1,6 @@
 ﻿using Beca.Xamarin.Example.Core.Models;
 using Beca.Xamarin.Example.Core.Services;
+using Cirrious.CrossCore;
 using Cirrious.MvvmCross.Plugins.Location;
 using Cirrious.MvvmCross.Plugins.PictureChooser;
 using Cirrious.MvvmCross.ViewModels;
@@ -14,16 +15,14 @@ namespace Beca.Xamarin.Example.Core.ViewModels
 	public class TodoItemsViewModel : MvxViewModel
 	{
 		readonly IAzureService _azureService;
-		readonly IMvxPictureChooserTask _pictureChooserTask;
 		readonly IMvxLocationWatcher _locationWatcher;
 		List<ToDoItem> _toDoItems;
 		string _text, _location;
 		byte[] _image;
 
-		public TodoItemsViewModel(IAzureService azureService, IMvxPictureChooserTask pictureChooserTask, IMvxLocationWatcher locationWatcher)
+		public TodoItemsViewModel(IAzureService azureService, IMvxLocationWatcher locationWatcher)
 		{
 			_azureService = azureService;
-			_pictureChooserTask = pictureChooserTask;
 			_locationWatcher = locationWatcher;
 			_toDoItems = new List<ToDoItem>();
 		}
@@ -109,7 +108,7 @@ namespace Beca.Xamarin.Example.Core.ViewModels
 			{
 				return new MvxCommand(() =>
 				{
-					_pictureChooserTask.TakePicture(400, 95,
+					Mvx.Resolve<IMvxPictureChooserTask>().TakePicture(400, 95,
 					(stream) =>
 					{
 						using (var memoryStream = new MemoryStream())

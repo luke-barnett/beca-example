@@ -10,6 +10,9 @@
 	Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
 	<StackPanel x:Name="LayoutRoot">
+		<TextBlock Text="{Binding Location}" />
+		<Button Content="Take Photo" Command="{Binding TakePicture}" />
+		<Image Source="{Binding Image, Converter={StaticResource BytesToImage}}" />
 		<TextBox Text="{Binding Text, Mode=TwoWay}" />
 		<Button Content="Add Item" Command="{Binding AddItem}" />
 		<ListView ItemsSource="{Binding ToDoItems}">
